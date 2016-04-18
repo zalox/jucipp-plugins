@@ -36,3 +36,11 @@ The plugin feature has two options in config.json to configure various paths
     "plugin_directory": "<path>"
 }
 ```
+
+## Try it!
+
+```bash
+cd ~/.juci/
+rm plugins
+git clone https://github.com/zalox/jucipp-plugins plugins
+```
