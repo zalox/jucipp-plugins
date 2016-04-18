@@ -103,6 +103,8 @@ def add_indention(text_line, output) :
 
 def insert_snippet(action, param) :
   view = jucipp.editor.get_current_gtk_source_view()
+  if not view :
+    return
   gtk_text_buffer = view.get_buffer()
   if not gtk_text_buffer : 
     return  
