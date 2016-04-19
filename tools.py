@@ -13,7 +13,7 @@ def add_menu(position, label, items) :
     return
   sub_menu = Gio.Menu.new()
   i = 0
-  app = Gtk.Application.get_default()
+  app = Gio.Application.get_default()
   for item in items :
     sub_menu.insert(i, item['label'], 'app.'+item['action'])
     i = i + 1
