@@ -31,19 +31,20 @@ def init() :
   items = [
             {
               'label': 'Open plugin folder',
-              'action': 'open_plugin_folder',
+              'action': 'open-plugin-folder',
               'accel': '<primary>p',
               'method': open_plugin_folder
             },
             {
               'label': 'Open favorite folder',
-              'action': 'open_favorite_folder',
+              'action': 'open-favorite-folder',
               'accel': '<primary>j',
               'method': open_favorite_folder
             },
+            # TODO use unused keybindings
             {
               'label': 'Open favorite file',
-              'action': 'open_favorite_file',
+              'action': 'open-favorite-file',
               'accel': '<primary><shift>j',
               'method': open_favorite_file
             }
