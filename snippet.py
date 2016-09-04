@@ -23,8 +23,8 @@ def init() :
   items = [
             {
               'label': 'Insert snippet',
-              'action': 'insert_snippet',
-              'accel': '<primary>space',
+              'action': 'insert-snippet',
+              'accel': '<Alt>space',
               'method': insert_snippet
             }
   ]
@@ -116,7 +116,7 @@ def jump(start_iter, text) :
   pos = 0
   stack = []
   for c in text : # takes care of matching {}
-    if c is '$' : # constraint: comments with $ allowed in snippets
+    if c is '$' : # constraint: comments with $ are not allowed in snippets
       start_pos = start_pos + pos
     if c is '{' :
       stack.append(c)
